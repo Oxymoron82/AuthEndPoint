@@ -1,0 +1,14 @@
+### Register a new user
+POST http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+    "userName": "Maria",
+    "password": "54321"
+}
+
+### Login with credentials
+GET http://localhost:5000/api/user/login?username=Maria&password=54321
+
+### Get all users
+GET http://localhost:5000/api/user/users 
